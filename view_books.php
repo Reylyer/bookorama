@@ -26,7 +26,8 @@
         echo '<td>' . $row->author . '</td>';
         echo '<td>' . $row->title . '</td>';
         echo '<td>$' . $row->price . '</td>';
-        echo '<td><a class="btn btn-primary btn-sm" href="show_cart.php?id=' . $row->isbn . '">Add to Cart</a></td>';
+        echo '<td><a class="btn btn-warning btn-sm" href="edit_book.php?id=' . $row->isbn . '">Edit</a>&nbsp;&nbsp;';
+        echo '<a class="btn btn-danger btn-sm" href="delete_book.php?id=' . $row->isbn . '">Delete</a></td>';
         echo '</tr>';
         $i++;
       }
